@@ -1,0 +1,33 @@
+div.special {
+    font-family: Helvetica;
+    text-align: center;
+    border-style: solid;
+    width: 300px;
+    height: 300px;
+}
+
+table {
+    margin: 0 auto;
+    table-layout:fixed;
+    width: 100%;
+}
+
+td {
+    padding-bottom: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-bottom-style: groove;
+}
+
+td.header {
+    text-align: right;
+    padding-right: 50px;
+}
+
+h2 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
