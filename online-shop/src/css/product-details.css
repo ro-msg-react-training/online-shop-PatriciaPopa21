@@ -1,0 +1,25 @@
+div.product-details {
+  text-align: center;
+  font-family: Helvetica;
+  font-size: 15px;
+  color: #000;
+  max-width: 700px;
+}
+
+img.product-details {
+  max-width: 200px;
+  max-height: 200px;
+}
+
+div.custom-box {
+  max-width: 700px;
+}
+
+div.centerall {
+  height: 100vh;
+  padding: 0;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}

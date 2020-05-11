@@ -1,10 +1,10 @@
 import React from "react";
-import "../css/product.css";
+import "../css/product-details.css";
 import "../css/generic-styles.css";
 import { ProductProps, ProductState } from "./interfaces";
 import { Link } from "react-router-dom";
 
-export class Product extends React.Component<ProductProps, ProductState> {
+export class ProductDetails extends React.Component<ProductProps, ProductState> {
   constructor(props: ProductProps) {
     super(props);
     this.state = {
@@ -18,34 +18,34 @@ export class Product extends React.Component<ProductProps, ProductState> {
   }
 
   render() {
-    const path: string = "/products/" + this.state.id;
+    const path: string = "/todo";
 
     return (
-      <div className="custom-container">
-        <div className="column box" key={this.state.id}>
+      <div className="centerall">
+        <div className="custom-box box" key={this.state.id}>
           <div className="buttons has-addons is-centered">
-            <div className="thumbnail">
-              <h2>Product: {this.state.name}</h2>
+            <div className="product-details">
+              <h2>Product: Notebook Basic 15</h2>
               <p>
-                <img className="thumbnail" src={this.state.picture} alt="Picture not available" />
+                <img className="product-details" src="https://sapui5.hana.ondemand.com/test-resources/sap/ui/documentation/sdk/images/HT-1000.jpg" alt="Picture not available" />
               </p>
               <table>
                 <tbody>
                   <tr>
                     <td>Name:</td>
-                    <td className="thumbnail">{this.state.name}</td>
+                    <td>Notebook Basic 15</td>
                   </tr>
                   <tr>
                     <td>Category:</td>
-                    <td className="thumbnail">{this.state.category}</td>
+                    <td>Laptops</td>
                   </tr>
                   <tr>
                     <td>Price:</td>
-                    <td className="thumbnail">{this.state.price}</td>
+                    <td>956</td>
                   </tr>
                   <tr>
                     <td>Description:</td>
-                    <td className="thumbnail">{this.state.description}</td>
+                    <td>Notebook Basic 15 with 2,80 GHz quad core, 15\" LCD, 4 GB DDR3 RAM, 500 GB Hard Disc, Windows 8 Pro</td>
                   </tr>
                 </tbody>
               </table>
@@ -53,7 +53,7 @@ export class Product extends React.Component<ProductProps, ProductState> {
           </div>
           <div className="buttons has-addons is-centered">
             <button className="button">
-              <Link to={path}>See product</Link>
+              <Link to={path}>Add to cart</Link>
             </button>
           </div>
         </div>

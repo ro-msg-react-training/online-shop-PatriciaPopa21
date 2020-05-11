@@ -1,0 +1,13 @@
+table {
+  margin: 0 auto;
+  table-layout: fixed;
+  width: 90%;
+}
+
+h2 {
+  margin-top: 5px;
+}
+
+td {
+  border-bottom-style: groove;
+}
